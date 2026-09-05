@@ -2,40 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>This is my personal website! Check it out!</title>
+
   <style>
-    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f7f7f8;color:#111;display:flex;align-items:center;justify-content:center;padding:24px;}
-    .container{width:100%;max-width:680px;background:#fff;border:1px solid #e6e7ea;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,40,0.06);padding:20px;box-sizing:border-box;}
-    .header{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
-    h1{font-size:18px;margin:0;color:#0f172a}
-    p.lead{margin:0;color:#334155;font-size:14px}
-    .iframe-wrap{width:100%;max-width:420px;background:#000;border-radius:8px;overflow:hidden;margin:16px 0;}
-    .responsive-iframe{position:relative;width:100%;padding-top:75%;overflow:hidden}
-    .responsive-iframe iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-    .caption{display:flex;flex-direction:column;gap:8px;color:#475569;font-size:13px}
-    .small{color:#64748b;font-size:13px}
-    .link{color:#2563eb;text-decoration:none;font-size:13px}
-    @media(min-width:640px){ .header{flex-direction:row;align-items:center;justify-content:space-between} h1{font-size:20px} }
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f7f8;
+      color: #111;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+      background: #fff;
+      border: 1px solid #e6e7ea;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .prod-card {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .prod-cover {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .prod-cover img {
+      display: block;
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    .prod-body {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .prod-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #0f172a;
+    }
+
+    p.lead {
+      margin: 0;
+      color: #334155;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (min-width: 640px) {
+      .header {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
   </style>
 </head>
-<body>
-  <a class="prod-card fade-up" href="" target="_blank" alt="The Vendor has requested that vulnerability info remain confidential">
-        <div class="prod-cover">
-          <div class="prod-cover-bg"></div>
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F013%2F013%2F199%2Flarge_2x%2Fblue-solid-color-background-texture-illustration-light-blur-free-photo.jpeg&f=1&nofb=1&ipt=e19eab952552cbea4cf7789e429963421b9f5bfc635c114d5e0163e7ff1adf72" alt="" />
-        </div>
-        <div class="prod-body">
-          <div class="prod-name">This is my brand new website!</div>
-        </div>
-    <div class="header">
-      <h1>You clicked on this link didn't you. *sighs*</h1>
-      <p class="lead">This website was a phishing test made by Aaron to test if you can detect what is a real phishing attempt and what is fake. This site has not harmed or stole information from your computer or phone. This is just to show you how anyone can be a victim to phishing.</p>
-    </div>
 
+<body>
+  <main class="container">
+    <a
+      class="prod-card fade-up"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="This is my brand new website"
+    >
+      <div class="prod-cover">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F013%2F013%2F199%2Flarge_2x%2Fblue-solid-color-background-texture-illustration-light-blur-free-photo.jpeg&f=1&nofb=1&ipt=e19eab952552cbea4cf7789e429963421b9f5bfc635c114d5e0163e7ff1adf72"
+          alt="Blue textured background"
+        />
       </div>
-    </div>
-  </div>
+
+      <div class="prod-body">
+        <div class="prod-name">This is my brand new website!</div>
+      </div>
+    </a>
+
+    <section class="header">
+      <h1>You clicked on this link, didn't you? *sighs*</h1>
+
+      <p class="lead">
+        This website was a phishing test made by Aaron to test if you can
+        detect what is a real phishing attempt and what is fake. This site has
+        not harmed or stolen information from your computer or phone. This is
+        just to show you how anyone can be a victim of phishing.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
-
